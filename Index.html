@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./Css/style.css">
-    <link rel="stylesheet" href="">
     <title>Document</title>
 </head>
 <body>
     <header>
         <img src="./Images/logo.png" alt="">
-    </header>
-    <aside>
-        <div class="menu_container">
-        <p>Añadir tarea</p>
-        <p>Bandeja de entrada</p>
-        <p>Papelera</p>
-        </div>
-        <!--
         <div class="btn">
-            <button id="logout">cerrar sesión</button>
+        <button id="logout">cerrar sesión</button>
         </div>
-        -->
-        <div class="menu_grades">
-            <h1>notas</h1>
-        </div>
-    </aside>
+    </header>
+<div class="container">
+    <div class="perfil">
+        <span>Vamos a cumplir tus metas</span>
+    </div>
 
-    <script src="./Javascript/index.js"></script>
+    <div class="agregar-tarea">
+        <input type="text" id="input" placeholder="agregar una tarea">
+        <i class="fas fa-plus-circle"></i>
+    </div>
+
+
+    <div class="seccion-tarea">
+        <h3>Estas son tus tareas Pendientes</h3>
+        <ul id="lista">
+            <li>
+                <i class="far fa-circle co" data="realizado" id="0"></i>
+                <p class="text"> hacer la tarea de español</p>
+                <i class="fas fa-trash de" data="eliminado" id="0"></i>
+
+
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="/Javascript/index.js"></script>
 </body>
 </html>

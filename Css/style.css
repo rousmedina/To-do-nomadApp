@@ -6,47 +6,22 @@
 
 body{
     font-family:poppins;
-    background-color:#ffff ;
-
+    background-color:#F9F8F7 ;
 }
+
+header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.btn{
+    padding: 20px 20px 0 0px;
+}
+
 header img{
     width: 200px;
     padding: 40px 0 0 60px;
 }
-
-aside{
-    width: 100%;
-    height: 100vh;
-    border: 1px solid#0b0b0b;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-
-aside .menu_container, .menu_grades{
-width: 30%;
-border: 1px solid#0b0b0b;
-background: #F9F8F7;
-padding: 120px 0 0 40px;
-
-
-}
-
-aside .menu_container p{
-    font-size: 1em;
-    color: #494949;
-}
-
-aside .menu_grades{
-    width: 70%;
-    border: 1px solid#0b0b0b;
-    background: #ffff;
-    }
-
-
-
-
 
 section {
     display: flex;
@@ -78,7 +53,7 @@ section form{
     flex-wrap: wrap;
     max-width: 500px;
     border-radius: 20px;
-    color: #6E6E6E;
+    color: #494949;
 
 }
 
@@ -108,10 +83,91 @@ section form input[type='submit']{
 }
 
 section p{
-    color: #6E6E6E;
+    color: #494949;
 }
 
 section p a{
     text-decoration: none;
     color: #00B7FF;
+}
+
+.container{
+    max-width: 80%;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* agregar tarea*/
+.agregar-tarea{
+    background-color: #ffff;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    border: 1px solid#00B7FF;
+    margin: 40px 0;
+}
+
+.agregar-tarea input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffff;
+}
+
+.agregar-tarea i{
+    color: #00B7FF;
+    font-size: 50px;
+}
+
+.agregar-tarea i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder{
+    font-size: 1.1rem;
+    color: #00B7FF;
+}
+
+/* seccion tarea */
+
+.seccion-tarea{
+color: #494949;
+margin-bottom: 10px;
+}
+
+.seccion-tarea li{
+display: flex;
+border-radius: 15px;
+align-items: center;
+justify-content: space-between;
+background-color: #ffff;
+padding: 20px;
+margin: 5px 0;
+color: #151515;
+
+
+}
+
+.agregar-tarea i {
+font-size: 25px;
+}
+
+.seccion-tarea i:hover{
+    color: #aaaaaa;
+    cursor: pointer;
+}
+.agregar-tarea > ul p {
+    font-size: 1.2rem;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: #494949;
 }

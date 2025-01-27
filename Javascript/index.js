@@ -4,9 +4,3 @@ if (!user){
 
 }
 
-const logout = document.querySelector('#logout')
-logout.addEventListener('click' , ()=> {
-    alert('Hasta pronto!')
-    localStorage.removeItem('login_sucess')
-    window.location.href = 'login.html'
-})
