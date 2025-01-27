@@ -115,3 +115,86 @@ section p a{
     text-decoration: none;
     color: #00B7FF;
 }
+
+    .contenedor-principal{
+    background-color: #F9F8F7;
+    margin: 200px auto;
+    width: 500px;
+    border-radius: 10px;
+    
+    }
+
+    h1{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    color:#757575;
+    }
+
+    .contenedor{
+    width: 450px;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    justify-content:space-between;
+    }
+
+
+   .contenedor input[type="text"]{
+   padding: 10px;
+   font-size: 20px;
+   border-radius: 10px;
+   width: 280px;
+   }
+
+   .contenedor .botonagregar{
+   padding: 10px 15px;
+   font-size: 20px;
+   cursor: pointer;
+   border-radius: 10px;
+    }
+
+    .contenedor .botonagregar:hover{
+    background-color:#00B7Ff;
+    border: 1px solid white;
+    color: white;
+    }
+
+    .lista_de_tareas{
+    list-style: none;
+    padding: 20px;
+    
+    }
+
+    .lista_de_tareas li{
+   display: flex;
+   text-transform: capitalize;
+   border-radius: 10px;
+   background-color: #00B7Ff;
+   padding: 20px;
+   justify-content: space-between;
+    }
+
+    .lista_de_tareas li input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 10px;
+    }
+
+    .lista_de_tareas li{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    }
+
+    li .delete{
+    cursor: pointer;
+    }
+
+    li .delete:hover{
+    color: red;
+    }
+  
