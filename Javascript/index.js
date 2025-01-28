@@ -26,16 +26,30 @@ botonEnter.addEventListener('click', ()=> {
     if(tarea){
         agregarTarea(tarea)
     }
+    else {
+    
+    alert("Debe agregar una tarea" ) // agregue mensaje al dar click con caja vacia
+    }
     input.value=''
-
-})
+    })
 
 document.addEventListener('keyup',function(event){
-    if(event.key=='Enter'){
-        const tarea = input.value
+    if(event.key=='Enter')
+        {
+        const tarea=input.value
         if(tarea){
             agregarTarea(tarea)
+
+        } else{
+            
+            alert("Debe agregar una tarea" ) // agregue mensaje al dar enter con caja vacia
+        }  
+         input.value='';         
         }
-    input.value=''
-    }
+
+    // funcion logout o cerrar sesion
+    document.getElementById('logout').addEventListener('click', function() {
+        window.open("http://127.0.0.1:5500/login.html");
+    });
+    
 })
