@@ -14,8 +14,9 @@ header{
     justify-content:space-between;
 }
 
-.btn{
-    padding: 20px 20px 0 0px;
+button{
+
+    border-radius: 10px;
 }
 
 header img{
